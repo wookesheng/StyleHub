@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="page-cart">
     <header>
         <div class="container">
             <div class="logo">
@@ -33,9 +33,19 @@
         </div>
     </div>
 
-    <section class="page-header">
+    <section class="cart-hero">
         <div class="container">
-            <h1>Your Shopping Cart</h1>
+            <div class="cart-hero-grid">
+                <div class="cart-hero-copy">
+                    <p class="cart-kicker">Cart</p>
+                    <h1>Your shopping cart</h1>
+                    <p class="muted">Review items, adjust quantities, then proceed to checkout. (Educational demo)</p>
+                </div>
+                <div class="cart-hero-actions">
+                    <a href="products.html" class="btn btn-secondary">Continue Shopping</a>
+                    <a href="#cart-content" class="btn btn-primary">View Items</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -51,54 +61,67 @@
             </div>
 
             <div id="cart-content">
-                <div class="cart-items">
-                    <table class="cart-table">
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Total</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="cart-items-container">
-                            <!-- Cart items will be dynamically inserted here -->
-                        </tbody>
-                    </table>
-                </div>
+                <div class="cart-layout">
+                    <div class="cart-left">
+                        <div class="cart-card">
+                            <div class="cart-card-head">
+                                <h2>Items</h2>
+                                <div class="cart-update">
+                                    <button id="clear-cart" class="btn btn-secondary">Clear Cart</button>
+                                    <button id="update-cart" class="btn">Update</button>
+                                </div>
+                            </div>
 
-                <div class="cart-actions">
-                    <div class="cart-coupon">
-                        <input type="text" placeholder="Coupon Code">
-                        <button class="btn">Apply Coupon</button>
-                    </div>
-                    <div class="cart-update">
-                        <button id="clear-cart" class="btn btn-secondary">Clear Cart</button>
-                        <button id="update-cart" class="btn">Update Cart</button>
-                    </div>
-                </div>
+                            <div class="cart-items">
+                                <table class="cart-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cart-items-container">
+                                        <!-- Cart items will be dynamically inserted here -->
+                                    </tbody>
+                                </table>
+                            </div>
 
-                <div class="cart-summary">
-                    <h2>Cart Summary</h2>
-                    <div class="summary-item">
-                        <span>Subtotal</span>
-                        <span id="cart-subtotal">RM0.00</span>
+                            <div class="cart-footer-bar">
+                                <div class="cart-coupon">
+                                    <input type="text" placeholder="Coupon Code">
+                                    <button class="btn">Apply</button>
+                                </div>
+                                <a href="products.html" class="btn btn-secondary">Continue Shopping</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="summary-item">
-                        <span>Shipping</span>
-                        <span id="cart-shipping">RM5.00</span>
-                    </div>
-                    <div class="summary-item discount hidden" id="discount-row">
-                        <span>Discount</span>
-                        <span id="cart-discount">-RM0.00</span>
-                    </div>
-                    <div class="summary-item total">
-                        <span>Total</span>
-                        <span id="cart-total">RM0.00</span>
-                    </div>
-                    <button id="proceed-to-checkout" class="btn btn-secondary">Proceed to Checkout</button>
-                    <a href="products.html" class="continue-shopping">Continue Shopping</a>
+
+                    <aside class="cart-right">
+                        <div class="cart-summary">
+                            <h2>Summary</h2>
+                            <div class="summary-item">
+                                <span>Subtotal</span>
+                                <span id="cart-subtotal">RM0.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Shipping</span>
+                                <span id="cart-shipping">RM5.00</span>
+                            </div>
+                            <div class="summary-item discount hidden" id="discount-row">
+                                <span>Discount</span>
+                                <span id="cart-discount">-RM0.00</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Total</span>
+                                <span id="cart-total">RM0.00</span>
+                            </div>
+                            <button id="proceed-to-checkout" class="btn btn-primary">Proceed to Checkout</button>
+                            <p class="muted small">Checkout is a demo flow. No payments are processed.</p>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>
