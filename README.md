@@ -31,7 +31,7 @@ This project was developed as a portfolio piece to demonstrate web development, 
 
 - Product Details Page
   
-![Alt text](capture/StyleHub_productdetails.png)
+![Alt text](capture/StyleHub_productdetailspage.png)
 
 - About Page
   
