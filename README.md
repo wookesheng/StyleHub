@@ -21,22 +21,27 @@ This project was developed as a portfolio piece to demonstrate web development, 
 ---
 
 ## Screenshots
-> *(Add screenshots here)*
-- Homepage
-- Product listing page
-- Product details page
-- Mobile view
+- Home Page
+  
+![Alt text](capture/StyleHub_homepage.png)
 
+- Products Page
+  
+![Alt text](capture/StyleHub_productpage.png)
+
+- Product Details Page
+  
+![Alt text](capture/StyleHub_productdetails.png)
+
+- About Page
+  
+![Alt text](capture/StyleHub_aboutpage.png)
+
+- Contact Page
+  
+![Alt text](capture/StyleHub_contactpage.png)
+
+- Shopping Cart Page
+  
+![Alt text](capture/StyleHub_cartpage.png)
 ---
-
-## Tech Stack
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-
----
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/stylehub.git
