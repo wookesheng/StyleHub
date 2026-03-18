@@ -33,120 +33,184 @@
         </div>
     </div>
 
-    <section class="page-header">
+    <section class="contact-hero">
         <div class="container">
-            <h1>Contact Us</h1>
+            <div class="contact-hero-content">
+                <p class="contact-kicker">Contact</p>
+                <h1>We’re here to help</h1>
+                <p class="contact-subtitle">Questions about products, sizing, or your order? Send us a message and we’ll get back to you as soon as possible.</p>
+
+                <div class="contact-quick-actions" aria-label="Quick contact actions">
+                    <a class="contact-chip" href="mailto:info@stylehub.com">
+                        <i class="fa fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a class="contact-chip" href="tel:+60123456789">
+                        <i class="fa fa-phone"></i>
+                        <span>Call</span>
+                    </a>
+                    <a class="contact-chip" href="#contact-form">
+                        <i class="fa fa-paper-plane"></i>
+                        <span>Message</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="contact-section">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Get in Touch</h2>
-                    <p>We'd love to hear from you! Whether you have a question about our products, need help with an order, or just want to say hello, we're here to help.</p>
-                    <br>
+            <div class="contact-layout">
+                <div class="contact-cards" aria-label="Contact information">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" aria-hidden="true"><i class="fa fa-map-marker"></i></div>
+                        <div class="contact-card-body">
+                            <h2>Visit our store</h2>
+                            <p>123 Fashion Street<br>Cheras, Wilayah Persekutuan<br>Malaysia</p>
+                            <p class="muted">Mon–Fri: 9am–6pm</p>
+                        </div>
+                    </div>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa fa-map-marker fa-2x"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Our Store</h3>
-                                <p>123 Fashion Street<br>Cheras, Wilayah Persekutuan<br>Malaysia</p>
-                            </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon" aria-hidden="true"><i class="fa fa-envelope"></i></div>
+                        <div class="contact-card-body">
+                            <h2>Email us</h2>
+                            <p>
+                                <a href="mailto:info@stylehub.com">info@stylehub.com</a><br>
+                                <a href="mailto:support@stylehub.com">support@stylehub.com</a>
+                            </p>
+                            <p class="muted">We reply within 1–2 business days.</p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa fa-envelope fa-2x"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Email Us</h3>
-                                <p>info@stylehub.com<br>support@stylehub.com</p>
-                            </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon" aria-hidden="true"><i class="fa fa-phone"></i></div>
+                        <div class="contact-card-body">
+                            <h2>Call us</h2>
+                            <p><a href="tel:+60123456789">+60 123 456 789</a></p>
+                            <p class="muted">Mon–Fri: 9am–6pm</p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa fa-phone fa-2x"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Call Us</h3>
-                                <p>+60123456789<br>Mon-Fri: 9am-6pm</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa fa-share-alt fa-2x"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Follow Us</h3>
-                                <div class="social-links">
-                                    <a href="#" class="social-link"><i class="fa fa-facebook"></i> Facebook</a>
-                                    <a href="#" class="social-link"><i class="fa fa-instagram"></i> Instagram</a>
-                                    <a href="#" class="social-link"><i class="fa fa-twitter"></i> Twitter</a>
-                                </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon" aria-hidden="true"><i class="fa fa-share-alt"></i></div>
+                        <div class="contact-card-body">
+                            <h2>Follow</h2>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="StyleHub on Facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="social-link" aria-label="StyleHub on Instagram"><i class="fa fa-instagram"></i> Instagram</a>
+                                <a href="#" class="social-link" aria-label="StyleHub on Twitter"><i class="fa fa-twitter"></i> Twitter</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <h2><br><br>Send Us a Message</h2>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Your Name*</label>
-                            <input type="text" id="name" name="name" required>
+
+                <div class="contact-panel">
+                    <div class="contact-panel-header">
+                        <h2>Send us a message</h2>
+                        <p class="muted">Fill in the form below. This demo site doesn’t actually send emails—your message will be “submitted” locally.</p>
+                    </div>
+
+                    <div id="form-status" class="form-status" aria-live="polite" aria-atomic="true"></div>
+
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                                <input type="text" id="name" name="name" autocomplete="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email <span aria-hidden="true">*</span></label>
+                                <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Your Email*</label>
-                            <input type="email" id="email" name="email" required>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="subject">Subject <span aria-hidden="true">*</span></label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="order">Order ID (optional)</label>
+                                <input type="text" id="order" name="order" autocomplete="off" placeholder="e.g. SH-1024">
+                            </div>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="subject">Subject*</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <label for="message">Your Message <span aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message*</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <label class="form-consent">
+                            <input type="checkbox" id="consent" required>
+                            <span>I understand this is an educational demo and no real orders will be processed.</span>
+                        </label>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <p class="muted small">By sending, you agree to be contacted back at the email provided.</p>
                         </div>
-                        
-                        <button type="submit" class="btn btn-secondary">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section class="contact-map-section">
+        <div class="container">
+            <div class="contact-map-card">
+                <div class="contact-map-header">
+                    <h2>Find us</h2>
+                    <p class="muted">Our store location (map preview).</p>
+                </div>
+                <div class="contact-map-frame" aria-label="Store map">
+                    <iframe
+                        title="StyleHub store location"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=101.735%2C3.062%2C101.765%2C3.092&amp;layer=mapnik"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="faq-section">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3><i class="fa fa-question-circle"></i> How can I track my order?</h3>
-                    <p>Once your order has been shipped, you will receive a confirmation email with a tracking number. You can use this tracking number on our website or on the carrier's website to track your package.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fa fa-question-circle"></i> What is your return policy?</h3>
-                    <p>We offer a 30-day return policy for all unworn and unwashed items. Please refer to our Returns & Exchanges page for more information.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fa fa-question-circle"></i> Do you ship internationally?</h3>
-                    <p>Yes, we ship to most countries worldwide. Shipping rates vary depending on your location. You can view shipping options and rates during checkout.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fa fa-question-circle"></i> How do I care for my StyleHub clothing?</h3>
-                    <p>Care instructions are included on the label of each garment. Generally, we recommend washing in cold water and air drying to extend the life of your clothing.</p>
-                </div>
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="muted">Quick answers to common questions.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <details class="faq-item">
+                    <summary><i class="fa fa-question-circle" aria-hidden="true"></i> How can I track my order?</summary>
+                    <div class="faq-body">
+                        <p>After checkout you would normally receive a confirmation email with a tracking number. Since this is an educational demo, tracking is not available.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary><i class="fa fa-question-circle" aria-hidden="true"></i> What is your return policy?</summary>
+                    <div class="faq-body">
+                        <p>In a real store we’d offer a 30-day return policy for unworn and unwashed items. For this demo, no returns are processed.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary><i class="fa fa-question-circle" aria-hidden="true"></i> Do you ship internationally?</summary>
+                    <div class="faq-body">
+                        <p>Shipping options would typically depend on your location. For this demo website, no shipping is available.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary><i class="fa fa-question-circle" aria-hidden="true"></i> How do I care for StyleHub clothing?</summary>
+                    <div class="faq-body">
+                        <p>Care instructions are usually included on the garment label. As a general rule, wash cold and air dry to extend the life of clothing.</p>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -182,24 +246,47 @@
     <script src="js/cart.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // Simple form validation and submission
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const contactForm = document.getElementById('contact-form');
-            
+            const statusEl = document.getElementById('form-status');
+
+            function setStatus(type, message) {
+                if (!statusEl) return;
+                statusEl.className = 'form-status ' + (type ? `is-${type}` : '');
+                statusEl.textContent = message || '';
+            }
+
+            function isValidEmail(value) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || '').trim());
+            }
+
             if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
+                contactForm.addEventListener('submit', function (e) {
                     e.preventDefault();
-                    
-                    // In a real implementation, you would send this data to a server
-                    const formData = {
-                        name: document.getElementById('name').value,
-                        email: document.getElementById('email').value,
-                        subject: document.getElementById('subject').value,
-                        message: document.getElementById('message').value
-                    };
-                    
-                    // For this demo, we'll just show a success message
-                    alert('Thank you for your message! We will get back to you soon.');
+                    setStatus('', '');
+
+                    const name = document.getElementById('name')?.value?.trim();
+                    const email = document.getElementById('email')?.value?.trim();
+                    const subject = document.getElementById('subject')?.value?.trim();
+                    const message = document.getElementById('message')?.value?.trim();
+                    const consent = document.getElementById('consent')?.checked;
+
+                    if (!name || !email || !subject || !message) {
+                        setStatus('error', 'Please fill in all required fields.');
+                        return;
+                    }
+
+                    if (!isValidEmail(email)) {
+                        setStatus('error', 'Please enter a valid email address.');
+                        return;
+                    }
+
+                    if (!consent) {
+                        setStatus('error', 'Please confirm the educational notice checkbox.');
+                        return;
+                    }
+
+                    setStatus('success', 'Thanks! Your message has been submitted (demo). We’ll get back to you soon.');
                     contactForm.reset();
                 });
             }
