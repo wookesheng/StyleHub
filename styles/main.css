@@ -1972,6 +1972,45 @@ footer {
     margin-bottom: 22px;
 }
 
+.about-hero .about-cta .btn {
+    padding: 12px 20px;
+    border-radius: 14px;
+    text-transform: none;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    border-width: 1px;
+}
+
+.about-hero .about-cta .btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #ff4d4d);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 14px 34px rgba(255, 0, 0, 0.25);
+}
+
+.about-hero .about-cta .btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.22);
+    color: var(--white);
+    backdrop-filter: blur(6px);
+}
+
+.about-hero .about-cta .btn:hover {
+    transform: translateY(-1px);
+}
+
+.about-hero .about-cta .btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 16px 40px rgba(255, 0, 0, 0.28);
+    color: var(--white);
+}
+
+.about-hero .about-cta .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.28);
+    color: var(--white);
+}
+
 .about-hero-media {
     border-radius: 18px;
     overflow: hidden;
